@@ -1,0 +1,34 @@
+!!!
+/[if IE 8 ] <html class="ie8">
+/[if IE 9 ] <html class="ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "always", :name => "referrer"}
+    %meta{"http-equiv" => "x-ua-compatible", :content => "ie=edge"}
+    %meta{:content => "webkit", :name => "renderer"}
+    %title="友好速搭 - 品牌电商服务平台"
+    %meta{:name => "keywords", :content => "快速建站,免费建站,企业建站,电子商务网站建设,外贸网站建设,自助建站,免费网站建设,品牌网站建设,网上商城建设"}
+    %meta{:name => "description", :content => "友好速搭是领先的独立网店快速搭建工具，专注服务精致品牌电商。为您提供免费网站建设、免费自助建站、免费网站、免费做网站等建站服务，无需运维、无需技术团队、60秒快速生成拥有独立域名的网店，灵活的配置给您与众不同的电商体验。"}
+    / css
+    / %link{:href => asset_url("/manage/v4/css/main-v4.css"), :rel => "stylesheet"}
+  %body
+    / 头部
+    %header.layout-header
+      .layout-header-wrap
+        %h1
+          /头部内容
+    / 内容
+    %main
+      .layout-container
+        = yield
+    / 底部
+    .layout-cont-main
+      .trail-pc
+        .index-trail-cont
+          /底部内容
+         
+  / javascript
+  / %script{:src => asset_url("/manage/v4/js/main-v4.js")}
