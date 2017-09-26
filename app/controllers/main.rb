@@ -20,7 +20,7 @@ PadrinoWeb::App.controllers :main do
   # end
   
   get :index do 
-     render 'index', :layout => 'layout_v4'
+     render 'index'
   end
 
 end
